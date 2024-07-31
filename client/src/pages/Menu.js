@@ -7,13 +7,13 @@ function Menu() {
   return (
     <div className="menu">
 <h1 className="menuTitle">Our Menu </h1>
-<div className="menuList">{MenuList.map((menuItem,key)=>{
+<div className="menuList">{MenuList.map((menuListItem,key)=>{
     return (
     <MenuItem 
     key={key}
-    image={menuItem.image} 
-    name={menuItem.name} 
-    price={menuItem.price}
+    image={menuListItem.image} 
+    name={menuListItem.name} 
+    price={menuListItem.price}
     />
 );
 })}
